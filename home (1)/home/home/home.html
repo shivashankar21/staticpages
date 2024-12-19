@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> AIRWAYS </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a id="in"></a><img src="/home/home/flight.gif" alt="" width="100px" height="60px" style="border-radius: 10px;"></div>
+      <h1>SkyMatrix Airlines</h1>
+      <!-- <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul> -->
+      <div class="buttons">
+        <input type="button" value="User">
+        <input type="button" value="Admin">
+      </div>
+    </nav>
+    <div class="main-container">
+        <!-- From and To -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" placeholder="Enter departure city">
+          </div>
+          <div class="form-group">
+            <label for="to">To</label>
+            <input type="text" id="to" placeholder="Enter destination city">
+          </div>
+        </div>
+        <!-- Departure and Return Dates -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="departure-date">Departure Date</label>
+            <input type="date" id="departure-date">
+          </div>
+          <div class="form-group">
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date">
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="form-row">
+          <div class="form-group">
+            <button type="submit" class="submit-button">Search</button>
+          </div>
+        </div>
+    </div>
+  </header>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
+      <link rel="stylesheet" href="FLIGHT BOOK.CSS">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+   </head>
+   <body>
+   <marquee behavior="" direction="right"> <img src="https://media.tenor.com/QyiWOraeA9oAAAAj/avion-travel.gif" alt=""></marquee>
+    <div class="content">
+        <div class="text">
+            BOOKING
+        </div>
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <span class="fa fa-user"></span>
+                <label>User ID</label>
+            </div>
+            <br>
+            <div class="field">
+                <input type="password" required>
+                <span class="fas fa-plane"></span>
+                <label>Flight ID</label>
+            </div>
+            <br>
+            <div class="field">
+                <input type="number" required>
+                <span class="fas fa-users"></span>
+                <label>No. of Passengers</label>
+            </div>
+            <br>
+            <div class="field">
+                <input type="datetime" required>
+                <span class="fas fa-clock"></span>
+                <label>Booking Time</label>
+            </div>
+            <br>
+            <br>
+            <button>Proceed</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    const userId = document.getElementById('userId').value;
+    const flightId = document.getElementById('flightId').value;
+    const passengers = document.getElementById('passengers').value;
+    const bookingTime = document.getElementById('bookingTime').value;
+
+    if (!userId || !flightId || !passengers || !bookingTime) {
+        alert('All fields are required.');
+        event.preventDefault();
+        return;
+    }
+
+    if (passengers <= 0) {
+        alert('Number of passengers must be at least 1.');
+        event.preventDefault();
+        return;
+    }
+
+    // Additional custom validations can be added here
+
+   window. alert('Booking done successfully!');
+});
+
+    </script>
+    
+   </body>
+</html>
